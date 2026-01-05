@@ -1,10 +1,15 @@
 # REGULA: Rust Execution Graph for Unified LLM Agents
 
-[![Crates.io](https://img.shields.io/badge/{REGULA}-{HEX-COLOR}?style=for-the-badge&logo={REGULA}&logoColor=white)](https://crates.io/crates/regula)
-[![Documentation](https://docs.rs/regula/badge.svg)](https://docs.rs/regula)
+![Sharp Edges](https://img.shields.io/badge/warning-sharp%20edges-yellow)
+![Rust](https://img.shields.io/badge/Rust-1.70+-black?logo=rust)
+![Status](https://img.shields.io/badge/status-pre--alpha-orange)
 [![License: MIT/Apache-2.0](https://img.shields.io/badge/license-MIT%2FApache--2.0-blue.svg)](LICENSE-MIT)
 
 **REGULA** is a high-performance, type-safe framework for building stateful, multi-agent LLM applications in Rust. It implements the "Pregel" graph computational model—similar to LangGraph but leveraging Rust's ownership model, type system, and concurrency primitives for superior reliability and efficiency.
+
+![Async](https://img.shields.io/badge/runtime-tokio-6e4cff)
+![Serde](https://img.shields.io/badge/serialization-serde-red)
+![Binary](https://img.shields.io/badge/deploy-single%20binary-success)
 
 ---
 
