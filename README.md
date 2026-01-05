@@ -1,3 +1,5 @@
+[![REGULA Logo](assets/1767650695521.jpg)]
+
 # REGULA: Rust Execution Graph for Unified LLM Agents
 
 ![Sharp Edges](https://img.shields.io/badge/warning-sharp%20edges-yellow)
