@@ -1,6 +1,6 @@
 # REGULA: Rust Execution Graph for Unified LLM Agents
 
-[![Crates.io](https://img.shields.io/crates/v/regula.svg)](https://crates.io/crates/regula)
+[![Crates.io](https://crates.io/crates/regula)
 [![Documentation](https://docs.rs/regula/badge.svg)](https://docs.rs/regula)
 [![License: MIT/Apache-2.0](https://img.shields.io/badge/license-MIT%2FApache--2.0-blue.svg)](LICENSE-MIT)
 
