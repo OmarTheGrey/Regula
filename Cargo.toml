@@ -1,0 +1,63 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/regula",
+    "crates/regula-core",
+    "crates/regula-macros",
+    "crates/regula-runtime",
+    "crates/regula-checkpoint",
+    "crates/regula-llm",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["REGULA Contributors"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/regula-rs/regula"
+homepage = "https://github.com/regula-rs/regula"
+documentation = "https://docs.rs/regula"
+description = "A LangGraph-style agentic orchestration framework in Rust"
+readme = "README.md"
+keywords = ["llm", "agent", "ai", "graph", "orchestration"]
+categories = ["asynchronous", "science"]
+
+[workspace.dependencies]
+# Async runtime
+tokio = { version = "1.35", features = ["full"] }
+async-trait = "0.1"
+futures = "0.3"
+async-stream = "0.3"
+pin-project-lite = "0.2"
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Error handling
+thiserror = "1.0"
+anyhow = "1.0"
+
+# HTTP client
+reqwest = { version = "0.12", features = ["json", "stream"] }
+reqwest-eventsource = "0.6"
+
+# Utilities
+uuid = { version = "1.6", features = ["v4", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+tracing = "0.1"
+indexmap = { version = "2.1", features = ["serde"] }
+
+# Proc macro
+syn = { version = "2.0", features = ["full", "extra-traits"] }
+quote = "1.0"
+proc-macro2 = "1.0"
+
+# Internal crates
+regula = { path = "crates/regula", version = "0.1.0" }
+regula-core = { path = "crates/regula-core", version = "0.1.0" }
+regula-macros = { path = "crates/regula-macros", version = "0.1.0" }
+regula-runtime = { path = "crates/regula-runtime", version = "0.1.0" }
+regula-checkpoint = { path = "crates/regula-checkpoint", version = "0.1.0" }
+regula-llm = { path = "crates/regula-llm", version = "0.1.0" }
+

@@ -1,0 +1,49 @@
+[package]
+name = "regula"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "A LangGraph-style agentic orchestration framework in Rust"
+
+[dependencies]
+regula-core = { workspace = true }
+regula-macros = { workspace = true }
+regula-runtime = { workspace = true }
+regula-checkpoint = { workspace = true }
+regula-llm = { workspace = true }
+
+# Re-export common dependencies
+serde = { workspace = true }
+serde_json = { workspace = true }
+tokio = { workspace = true }
+async-trait = { workspace = true }
+futures = { workspace = true }
+
+[dev-dependencies]
+tokio = { workspace = true, features = ["rt-multi-thread", "macros"] }
+anyhow = { workspace = true }
+
+[[example]]
+name = "simple_chat"
+path = "examples/simple_chat.rs"
+
+[[example]]
+name = "tool_agent"
+path = "examples/tool_agent.rs"
+
+[[example]]
+name = "multi_agent"
+path = "examples/multi_agent.rs"
+
+[[example]]
+name = "live_openrouter_test"
+path = "examples/live_openrouter_test.rs"
+
+[[example]]
+name = "live_gemini_test"
+path = "examples/live_gemini_test.rs"
+
+[[example]]
+name = "live_orchestration_test"
+path = "examples/live_orchestration_test.rs"
